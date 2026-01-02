@@ -8,26 +8,116 @@
   <meta name="robots" content="noindex,nofollow,noarchive">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <style>
-    :root { --fg:#eaeaea; --bg:#0d0d0d; --muted:#9a9a9a; }
-    html,body { height:100%; margin:0; background:var(--bg); color:var(--fg);
-                font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; }
-    .wrap { min-height:100%; display:flex; align-items:center; justify-content:center; padding:4rem 1.5rem; }
-    .card { max-width:720px; width:100%; border:1px solid #222; border-radius:18px; padding:2rem; background:#121212; box-shadow:0 10px 30px rgba(0,0,0,.35); }
-    h1 { margin:0 0 .5rem 0; font-size:clamp(1.25rem, 2.6vw, 1.75rem); letter-spacing:.02em; }
-    p { margin:.35rem 0; color:var(--muted); }
-    code { background:#1b1b1b; padding:.1rem .35rem; border-radius:6px; }
-    .small { font-size:.9rem; }
-    .tm { font-weight:600; letter-spacing:.02em; }
+    :root {
+      --fg: #eaeaea;
+      --bg: #0d0d0d;
+      --muted: #9a9a9a;
+      --card: #121212;
+      --border: #222;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+            "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    }
+
+    .wrap {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1.5rem;
+    }
+
+    .card {
+      max-width: 720px;
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 2.25rem;
+      background: var(--card);
+      box-shadow: 0 12px 40px rgba(0,0,0,.45);
+    }
+
+    /* Title */
+    h1 {
+      margin: 0;
+      font-size: clamp(1.6rem, 3.2vw, 2.25rem);
+      letter-spacing: 0.01em;
+      line-height: 1.15;
+    }
+
+    .tm {
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    /* Subtitle / slogan */
+    .tagline {
+      margin: 0.4rem 0 1.2rem 0;
+      font-size: 1rem;
+      color: var(--fg);
+      opacity: 0.85;
+      font-style: italic;
+    }
+
+    /* Body text */
+    p {
+      margin: 0.6rem 0;
+      color: var(--muted);
+    }
+
+    /* Make the "status" line slightly more readable */
+    .lede {
+      margin-top: 0.75rem;
+      color: var(--muted);
+      opacity: 0.95;
+      font-size: 1.05rem;
+    }
+
+    .small {
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    /* Separate long legal copy so it doesn't feel like one gray block */
+    .legal {
+      margin-top: 1.1rem;
+    }
+
+    .footer-note {
+      margin-top: 1.2rem;
+      color: var(--muted);
+      opacity: 0.9;
+    }
+
+    code {
+      background: #1b1b1b;
+      padding: 0.1rem 0.35rem;
+      border-radius: 6px;
+    }
   </style>
 </head>
 <body>
   <main class="wrap">
     <section class="card" aria-label="ClankerCore notice">
       <h1 class="tm">ClankerCore™</h1>
-      <p>Site under emergence.</p>
+      <p class="tagline">Keep the human.</p>
+
+      <p class="lede">Site under emergence.</p>
+
       <p class="small">© 2025 ClankerCore™ | All rights reserved.</p>
-      <p class="small">CLANKERCORE™ is intended for use in connection with apparel and related goods. No unauthorized commercial use of text or artwork.</p>
-      <p class="small">In memory of Sylvie Echo</p>
+
+      <p class="small legal">
+        CLANKERCORE™ is intended for use in connection with apparel and related goods.
+        No unauthorized commercial use of text or artwork.
+      </p>
+
+      <p class="small footer-note">In memory of Sylvie Echo</p>
     </section>
   </main>
 </body>
