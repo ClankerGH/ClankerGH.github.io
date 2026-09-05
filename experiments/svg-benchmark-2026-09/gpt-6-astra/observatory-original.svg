@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Rain-soaked solarpunk botanical observatory at blue hour</title>
+  <desc id="desc">A self-contained SVG illustration of a futuristic botanical observatory with a glass geodesic dome beside a broad river at blue hour, with wet pavement, puddles, a tram, mist, mountains, and distant city lights.</desc>
+
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1330"/>
+      <stop offset="38%" stop-color="#18365f"/>
+      <stop offset="68%" stop-color="#295780"/>
+      <stop offset="100%" stop-color="#64849b"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="78%" cy="18%" r="18%">
+      <stop offset="0%" stop-color="#dfeeff" stop-opacity="0.95"/>
+      <stop offset="25%" stop-color="#cfe5ff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#b5d3ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mountainGradBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#547394"/>
+      <stop offset="100%" stop-color="#314b66"/>
+    </linearGradient>
+    <linearGradient id="mountainGradMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4c5f73"/>
+      <stop offset="100%" stop-color="#253849"/>
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5d7f92" stop-opacity="0.85"/>
+      <stop offset="30%" stop-color="#376579" stop-opacity="0.95"/>
+      <stop offset="75%" stop-color="#244f62"/>
+      <stop offset="100%" stop-color="#173645"/>
+    </linearGradient>
+    <linearGradient id="shoreGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#203540"/>
+      <stop offset="100%" stop-color="#2e4a54"/>
+    </linearGradient>
+    <linearGradient id="pavementGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#53636b"/>
+      <stop offset="100%" stop-color="#2b353c"/>
+    </linearGradient>
+    <linearGradient id="buildingGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f5a63"/>
+      <stop offset="45%" stop-color="#364149"/>
+      <stop offset="100%" stop-color="#232e36"/>
+    </linearGradient>
+    <linearGradient id="metalLineGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9fced9"/>
+      <stop offset="100%" stop-color="#5a8e95"/>
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d6f7ff" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#87d1e6" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#2c8095" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="warmLightGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe8a5"/>
+      <stop offset="100%" stop-color="#cfa754"/>
+    </linearGradient>
+    <radialGradient id="interiorGlowGrad" cx="50%" cy="55%" r="55%">
+      <stop offset="0%" stop-color="#f9da8f" stop-opacity="0.82"/>
+      <stop offset="55%" stop-color="#d9a950" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#d9a950" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="puddleGrad" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#94c7d9" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#3e6677" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#223038" stop-opacity="0.72"/>
+    </radialGradient>
+    <linearGradient id="tramGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff3f2"/>
+      <stop offset="60%" stop-color="#9ed8c8"/>
+      <stop offset="100%" stop-color="#6ea99d"/>
+    </linearGradient>
+    <linearGradient id="bridgeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8aa1a8"/>
+      <stop offset="100%" stop-color="#53656c"/>
+    </linearGradient>
+    <radialGradient id="treeGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#79d78c" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#2d5f46" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="domeClip">
+      <path d="M473,627 C480,482 594,360 741,330 C870,304 998,355 1087,462 C1155,544 1173,636 1173,636 L473,636 Z"/>
+    </clipPath>
+    <clipPath id="lakeClip">
+      <path d="M0,570 C178,555 264,592 396,590 C487,589 599,558 744,565 C917,573 1031,621 1189,620 C1349,619 1431,572 1600,587 L1600,717 L0,717 Z"/>
+    </clipPath>
+    <clipPath id="puddleClip">
+      <path d="M0,721 C155,702 246,722 340,745 C420,763 501,768 610,748 C706,731 779,700 892,711 C1051,726 1118,776 1268,769 C1380,764 1487,726 1600,709 L1600,1000 L0,1000 Z"/>
+    </clipPath>
+
+    <mask id="reflectionFadeMask">
+      <rect width="1600" height="1000" fill="black"/>
+      <linearGradient id="reflectionFadeGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="white" stop-opacity="0.85"/>
+        <stop offset="45%" stop-color="white" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="white" stop-opacity="0"/>
+      </linearGradient>
+      <rect x="0" y="620" width="1600" height="380" fill="url(#reflectionFadeGrad)"/>
+    </mask>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="mistBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="waterDistort" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.08" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="glassDistort" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="turbulence" baseFrequency="0.004 0.01" numOctaves="2" seed="13" result="grain"/>
+      <feColorMatrix in="grain" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .12 0" result="faint"/>
+      <feBlend in="SourceGraphic" in2="faint" mode="screen"/>
+    </filter>
+    <filter id="puddleBlur" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <filter id="cityBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.8"/>
+    </filter>
+
+    <symbol id="star" viewBox="0 0 20 20">
+      <path d="M10,0 L12,7 L20,10 L12,13 L10,20 L8,13 L0,10 L8,7 Z" fill="#eef7ff" opacity="0.9"/>
+    </symbol>
+    <symbol id="plantCluster" viewBox="0 0 100 140">
+      <g>
+        <path d="M50,138 C49,122 49,108 52,88" fill="none" stroke="#2f6e55" stroke-width="4" stroke-linecap="round"/>
+        <path d="M53,101 C84,100 93,74 84,52 C67,59 57,78 53,101 Z" fill="#3d946d"/>
+        <path d="M48,90 C24,87 7,66 10,41 C30,43 44,60 48,90 Z" fill="#4ba476"/>
+        <path d="M49,76 C72,63 74,34 61,17 C44,31 41,54 49,76 Z" fill="#7bc889"/>
+        <path d="M54,111 C77,121 95,111 99,92 C85,87 63,93 54,111 Z" fill="#2c7a5c" opacity="0.9"/>
+        <path d="M46,109 C22,114 7,101 1,83 C17,82 38,93 46,109 Z" fill="#3a8a68" opacity="0.9"/>
+      </g>
+    </symbol>
+    <symbol id="triRib" viewBox="0 0 100 100">
+      <path d="M50,6 L95,88 L5,88 Z" fill="none" stroke="url(#metalLineGrad)" stroke-width="2.8" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="cityBlock" viewBox="0 0 120 90">
+      <g fill="#6d8393">
+        <path d="M0,90 L0,42 L16,42 L16,90 Z"/>
+        <path d="M18,90 L18,26 L42,26 L42,90 Z"/>
+        <path d="M45,90 L45,34 L60,34 L60,90 Z"/>
+        <path d="M63,90 L63,18 L92,18 L92,90 Z"/>
+        <path d="M96,90 L96,49 L120,49 L120,90 Z"/>
+      </g>
+      <g fill="#f6d79f" opacity="0.75">
+        <rect x="22" y="34" width="4" height="5"/>
+        <rect x="30" y="34" width="4" height="5"/>
+        <rect x="69" y="26" width="5" height="6"/>
+        <rect x="79" y="26" width="5" height="6"/>
+        <rect x="101" y="57" width="4" height="5"/>
+      </g>
+    </symbol>
+    <symbol id="windowStrip" viewBox="0 0 100 18">
+      <g>
+        <rect x="0" y="0" width="18" height="18" rx="2" fill="#ffd987" opacity="0.9"/>
+        <rect x="23" y="0" width="18" height="18" rx="2" fill="#ffe4ad" opacity="0.82"/>
+        <rect x="46" y="0" width="18" height="18" rx="2" fill="#ffd987" opacity="0.75"/>
+        <rect x="69" y="0" width="18" height="18" rx="2" fill="#ffe4ad" opacity="0.88"/>
+      </g>
+    </symbol>
+    <path id="catwalkPath1" d="M566,544 C650,510 777,501 930,518"/>
+    <path id="catwalkPath2" d="M598,470 C688,444 803,440 935,463"/>
+    <path id="bridgePath" d="M970,587 C1063,566 1159,572 1263,593"/>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#skyGrad)"/>
+  <rect width="1600" height="1000" fill="url(#moonGlow)" opacity="0.8"/>
+
+  <g id="background">
+    <g id="stars" opacity="0.88">
+      <use href="#star" x="180" y="110" width="6" height="6"/>
+      <use href="#star" x="240" y="92" width="8" height="8" opacity="0.7"/>
+      <use href="#star" x="316" y="145" width="5" height="5"/>
+      <use href="#star" x="418" y="124" width="6" height="6"/>
+      <use href="#star" x="520" y="84" width="8" height="8" opacity="0.75"/>
+      <use href="#star" x="598" y="128" width="5" height="5" opacity="0.65"/>
+      <use href="#star" x="690" y="102" width="6" height="6"/>
+      <use href="#star" x="789" y="78" width="8" height="8"/>
+      <use href="#star" x="890" y="116" width="5" height="5"/>
+      <use href="#star" x="944" y="84" width="7" height="7" opacity="0.72"/>
+      <use href="#star" x="1038" y="132" width="5" height="5" opacity="0.7"/>
+      <use href="#star" x="1146" y="94" width="7" height="7"/>
+      <use href="#star" x="1244" y="122" width="5" height="5"/>
+      <use href="#star" x="1324" y="85" width="6" height="6" opacity="0.75"/>
+    </g>
+
+    <g id="moon">
+      <circle cx="1225" cy="145" r="42" fill="#f1f8ff" opacity="0.92"/>
+      <circle cx="1241" cy="140" r="36" fill="#18365f"/>
+      <circle cx="1225" cy="145" r="68" fill="url(#moonGlow)" filter="url(#softGlow)"/>
+    </g>
+
+    <g id="clouds" opacity="0.7" filter="url(#mistBlur)">
+      <path d="M138,174 C186,146 277,152 312,185 C357,164 446,169 485,207 C533,199 599,219 625,257 C542,274 447,275 371,270 C286,266 199,252 138,174 Z" fill="#9fb4c9" opacity="0.23"/>
+      <path d="M882,197 C936,168 1021,172 1062,207 C1123,196 1184,207 1214,240 C1278,234 1337,251 1363,286 C1290,303 1210,309 1096,305 C997,302 923,277 882,197 Z" fill="#a9bfd3" opacity="0.25"/>
+      <path d="M1165,118 C1215,97 1286,102 1314,137 C1365,129 1415,141 1438,171 C1388,183 1336,185 1287,181 C1230,178 1192,162 1165,118 Z" fill="#bed1e0" opacity="0.18"/>
+    </g>
+
+    <g id="mountains-back" opacity="0.8">
+      <path d="M0,464 C96,431 165,390 223,402 C277,321 357,310 438,381 C501,344 575,357 639,424 C731,338 825,329 910,410 C973,356 1057,354 1146,430 C1212,381 1295,382 1388,455 C1457,420 1520,438 1600,404 L1600,587 L0,587 Z" fill="url(#mountainGradBack)"/>
+    </g>
+
+    <g id="mountains-mid">
+      <path d="M0,520 C101,479 208,457 294,489 C351,428 440,421 517,486 C580,444 646,447 715,495 C798,424 892,421 1008,513 C1080,470 1166,468 1242,519 C1326,467 1428,469 1600,518 L1600,617 L0,617 Z" fill="url(#mountainGradMid)"/>
+      <path d="M74,505 C106,491 127,474 148,462 C177,484 206,502 226,518" fill="none" stroke="#b3c4d2" stroke-opacity="0.28" stroke-width="7" stroke-linecap="round"/>
+      <path d="M643,488 C670,478 697,464 717,450 C739,467 755,486 772,498" fill="none" stroke="#b7c9d8" stroke-opacity="0.25" stroke-width="7" stroke-linecap="round"/>
+      <path d="M1212,505 C1245,488 1268,473 1292,458 C1318,472 1346,495 1374,520" fill="none" stroke="#b7c9d8" stroke-opacity="0.22" stroke-width="7" stroke-linecap="round"/>
+    </g>
+
+    <g id="city" transform="translate(1125 490) scale(2.55)" opacity="0.42" filter="url(#cityBlur)">
+      <use href="#cityBlock" x="0" y="0"/>
+      <use href="#cityBlock" x="88" y="11" transform="scale(0.88 0.88)"/>
+      <use href="#cityBlock" x="162" y="16" transform="scale(0.7 0.9)"/>
+    </g>
+  </g>
+
+  <g id="atmosphere">
+    <path d="M0,520 C173,495 284,512 408,521 C562,532 701,526 859,537 C972,545 1135,558 1283,540 C1410,524 1512,498 1600,506 L1600,646 L0,646 Z" fill="#b0c0c8" opacity="0.18" filter="url(#mistBlur)"/>
+    <path d="M0,598 C232,589 336,622 491,628 C671,635 881,607 1031,619 C1186,630 1358,618 1600,595 L1600,708 L0,708 Z" fill="#d3e2e5" opacity="0.11" filter="url(#mistBlur)"/>
+  </g>
+
+  <g id="water">
+    <path d="M0,570 C178,555 264,592 396,590 C487,589 599,558 744,565 C917,573 1031,621 1189,620 C1349,619 1431,572 1600,587 L1600,717 L0,717 Z" fill="url(#waterGrad)"/>
+    <g clip-path="url(#lakeClip)" opacity="0.72">
+      <path d="M-10,620 C138,596 214,611 336,633 C485,660 577,645 737,631 C860,620 958,639 1120,653 C1283,667 1434,660 1618,634" fill="none" stroke="#a6d5e1" stroke-opacity="0.25" stroke-width="4" filter="url(#waterDistort)"/>
+      <path d="M-10,650 C178,634 312,673 438,673 C586,672 733,637 857,643 C995,650 1149,685 1298,684 C1399,683 1507,666 1615,650" fill="none" stroke="#d1eff7" stroke-opacity="0.18" stroke-width="3" filter="url(#waterDistort)"/>
+      <path d="M764,605 C845,596 931,604 1058,626" fill="none" stroke="#f5d996" stroke-opacity="0.12" stroke-width="24" filter="url(#puddleBlur)"/>
+    </g>
+    <path d="M0,692 C174,673 305,692 433,706 C574,721 675,716 789,700 C918,682 1017,673 1129,694 C1293,726 1401,719 1600,695 L1600,736 L0,736 Z" fill="#1c3d49" opacity="0.72"/>
+  </g>
+
+  <g id="shoreline-vegetation">
+    <path d="M0,663 C90,646 142,653 205,664 C302,681 352,666 442,647 C524,630 609,640 721,659 C839,679 925,676 1054,648 C1148,628 1258,637 1344,657 C1447,681 1515,672 1600,657 L1600,742 L0,742 Z" fill="url(#shoreGrad)"/>
+    <g opacity="0.95">
+      <path d="M38,670 C46,648 53,643 63,621 C68,642 72,656 83,670" fill="#264e3f"/>
+      <path d="M100,667 C109,636 122,625 132,600 C139,629 147,645 159,668" fill="#2c5f4a"/>
+      <path d="M216,658 C226,630 235,623 245,602 C252,628 261,644 274,661" fill="#366851"/>
+      <path d="M348,654 C362,625 375,609 390,582 C397,613 406,639 422,655" fill="#3a7758"/>
+      <path d="M474,641 C486,615 494,607 506,582 C515,612 524,625 538,644" fill="#366d53"/>
+      <path d="M1178,649 C1191,619 1202,610 1211,592 C1219,616 1227,633 1240,652" fill="#366851"/>
+      <path d="M1374,662 C1387,634 1395,621 1408,602 C1417,625 1429,645 1442,663" fill="#2c5f4a"/>
+      <path d="M1489,660 C1502,633 1515,617 1526,596 C1533,621 1542,643 1555,661" fill="#305f49"/>
+    </g>
+  </g>
+
+  <g id="observatory" transform="translate(0 8)">
+    <g id="research-complex">
+      <path d="M398,625 L452,593 L581,593 L648,541 L760,541 L804,575 L861,575 L926,531 L1040,531 L1119,598 L1216,604 L1216,681 L398,681 Z" fill="url(#buildingGrad)"/>
+      <path d="M419,612 L540,612 L583,579 L729,579 L760,601 L871,601 L937,562 L1023,562 L1086,612 L1196,620" fill="none" stroke="#88b6be" stroke-width="3" stroke-opacity="0.65"/>
+      <path d="M452,593 L500,562 L594,562 L638,541" fill="none" stroke="#7fc0c8" stroke-opacity="0.65" stroke-width="2"/>
+      <g opacity="0.88">
+        <use href="#windowStrip" x="445" y="622" width="92" height="16"/>
+        <use href="#windowStrip" x="550" y="622" width="92" height="16"/>
+        <use href="#windowStrip" x="785" y="608" width="92" height="16"/>
+        <use href="#windowStrip" x="898" y="590" width="92" height="16"/>
+        <use href="#windowStrip" x="1006" y="590" width="92" height="16"/>
+      </g>
+      <path d="M397,681 L1216,681 L1216,700 L397,700 Z" fill="#1a242c"/>
+      <path d="M406,690 C555,675 663,688 789,689 C911,689 1021,673 1197,691" fill="none" stroke="#9fd2d7" stroke-opacity="0.18" stroke-width="5"/>
+      <rect x="649" y="554" width="80" height="22" rx="4" fill="#344149"/>
+      <text x="688" y="570" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" letter-spacing="2.2" fill="#d9efec" opacity="0.82">AURORA LAB</text>
+      <path d="M1087,612 L1176,612 L1185,560 L1128,560 Z" fill="#2f3941"/>
+      <g opacity="0.9">
+        <rect x="1137" y="569" width="13" height="30" rx="2" fill="#ffd683"/>
+        <rect x="1155" y="569" width="13" height="30" rx="2" fill="#ffe7b2"/>
+      </g>
+    </g>
+
+    <g id="bridge-tram">
+      <path d="M952,603 C1042,579 1166,582 1265,607" fill="none" stroke="url(#bridgeGrad)" stroke-width="8" stroke-linecap="round"/>
+      <path d="M963,610 C1049,593 1160,594 1247,613" fill="none" stroke="#b7cbd2" stroke-opacity="0.4" stroke-width="2"/>
+      <g opacity="0.55">
+        <path d="M987,612 L990,645" stroke="#6f8b94" stroke-width="4"/>
+        <path d="M1046,603 L1048,640" stroke="#6f8b94" stroke-width="4"/>
+        <path d="M1108,598 L1108,637" stroke="#6f8b94" stroke-width="4"/>
+        <path d="M1170,599 L1166,639" stroke="#6f8b94" stroke-width="4"/>
+        <path d="M1225,607 L1218,642" stroke="#6f8b94" stroke-width="4"/>
+      </g>
+      <g id="tram" transform="translate(1090 574) rotate(4)">
+        <path d="M0,18 C2,7 10,0 22,0 L78,0 C88,0 95,8 96,18 L99,39 C99,48 93,55 82,55 L17,55 C8,55 1,49 1,39 Z" fill="url(#tramGrad)" stroke="#d9f8ef" stroke-opacity="0.85" stroke-width="2"/>
+        <path d="M13,12 L83,12 C86,12 90,15 90,20 L90,31 L9,31 L9,20 C9,15 10,12 13,12 Z" fill="#427789" opacity="0.75"/>
+        <path d="M27,6 L72,6" stroke="#c5eee4" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="23" cy="56" r="6" fill="#324c57"/>
+        <circle cx="75" cy="56" r="6" fill="#324c57"/>
+        <rect x="16" y="17" width="18" height="10" rx="2" fill="#b7ecff" opacity="0.75"/>
+        <rect x="39" y="17" width="18" height="10" rx="2" fill="#b7ecff" opacity="0.78"/>
+        <rect x="62" y="17" width="18" height="10" rx="2" fill="#b7ecff" opacity="0.74"/>
+        <circle cx="86" cy="39" r="3" fill="#ffd788" filter="url(#softGlow)"/>
+      </g>
+    </g>
+
+    <g id="dome-base">
+      <path d="M492,636 L1148,636 L1148,671 L492,671 Z" fill="#314048"/>
+      <path d="M503,648 C676,640 947,640 1136,651" fill="none" stroke="#7fb0b6" stroke-width="2" opacity="0.5"/>
+      <path d="M510,636 C507,590 512,563 529,527 C571,437 644,376 741,351 C822,331 900,345 972,392 C1058,448 1110,521 1128,633" fill="url(#glassGrad)" opacity="0.5" stroke="#9edbe5" stroke-opacity="0.55" stroke-width="4" filter="url(#glassDistort)"/>
+    </g>
+
+    <g id="dome-interior" clip-path="url(#domeClip)">
+      <path d="M498,632 C503,548 554,458 623,405 C689,355 761,336 844,343 C956,352 1046,422 1104,515 C1128,554 1144,592 1148,636 L498,636 Z" fill="url(#interiorGlowGrad)"/>
+      <path d="M505,631 L1144,631" stroke="#e7b55d" stroke-opacity="0.33" stroke-width="12"/>
+      <g id="inner-structures" opacity="0.85">
+        <path d="M570,625 L570,450" stroke="#7fa7ab" stroke-width="5"/>
+        <path d="M676,625 L676,401" stroke="#7fa7ab" stroke-width="5"/>
+        <path d="M792,625 L792,363" stroke="#7fa7ab" stroke-width="5"/>
+        <path d="M908,625 L908,395" stroke="#7fa7ab" stroke-width="5"/>
+        <path d="M1018,625 L1018,450" stroke="#7fa7ab" stroke-width="5"/>
+        <path d="M540,550 C652,522 791,515 946,530" fill="none" stroke="#b8dce0" stroke-opacity="0.55" stroke-width="6"/>
+        <path d="M578,477 C682,447 812,442 949,467" fill="none" stroke="#b8dce0" stroke-opacity="0.55" stroke-width="6"/>
+        <path d="M564,553 C560,574 560,595 564,617" fill="none" stroke="#d5b369" stroke-width="7"/>
+        <path d="M936,530 C934,556 933,584 937,617" fill="none" stroke="#d5b369" stroke-width="7"/>
+      </g>
+      <g id="catwalks" opacity="0.95">
+        <use href="#catwalkPath1" fill="none" stroke="#d2c8b6" stroke-width="12"/>
+        <use href="#catwalkPath1" fill="none" stroke="#546e75" stroke-width="3" stroke-dasharray="2 16" stroke-linecap="round"/>
+        <use href="#catwalkPath2" fill="none" stroke="#d2c8b6" stroke-width="10"/>
+        <use href="#catwalkPath2" fill="none" stroke="#546e75" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round"/>
+      </g>
+      <g id="interior-plants">
+        <g transform="translate(546 520) scale(1.05)"><use href="#plantCluster"/></g>
+        <g transform="translate(626 500) scale(0.9)"><use href="#plantCluster"/></g>
+        <g transform="translate(734 488) scale(1.2)"><use href="#plantCluster"/></g>
+        <g transform="translate(848 505) scale(0.95)"><use href="#plantCluster"/></g>
+        <g transform="translate(968 520) scale(1.08)"><use href="#plantCluster"/></g>
+        <g transform="translate(673 555) scale(0.65)"><use href="#plantCluster"/></g>
+        <g transform="translate(901 558) scale(0.68)"><use href="#plantCluster"/></g>
+      </g>
+      <g id="interior-glows" opacity="0.7" filter="url(#softGlow)">
+        <circle cx="657" cy="519" r="38" fill="url(#treeGlow)"/>
+        <circle cx="792" cy="505" r="58" fill="url(#treeGlow)"/>
+        <circle cx="958" cy="523" r="40" fill="url(#treeGlow)"/>
+      </g>
+      <g id="people-scale-details" opacity="0.7">
+        <path d="M728,540 L730,520" stroke="#26343b" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="729" cy="516" r="4" fill="#26343b"/>
+        <path d="M873,467 L875,449" stroke="#26343b" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="874" cy="445" r="4" fill="#26343b"/>
+      </g>
+    </g>
+
+    <g id="dome-structure">
+      <g opacity="0.95">
+        <path d="M510,636 C513,563 551,480 618,418 C681,360 751,337 830,343 C943,352 1036,428 1091,519 C1112,556 1126,596 1130,636" fill="none" stroke="#a8d8df" stroke-width="5"/>
+        <path d="M528,636 C533,585 567,516 616,469 C666,420 730,390 799,385 C890,378 968,414 1028,481 C1068,525 1094,578 1103,636" fill="none" stroke="#7fc2ca" stroke-opacity="0.8" stroke-width="3"/>
+        <path d="M596,636 C600,591 626,539 664,503 C710,461 760,439 823,438 C898,438 962,468 1002,518 C1032,555 1052,593 1059,636" fill="none" stroke="#7fc2ca" stroke-opacity="0.6" stroke-width="2.6"/>
+        <path d="M682,636 C684,595 703,561 735,533 C770,504 810,490 855,492 C916,494 957,523 986,561 C1003,584 1017,609 1020,636" fill="none" stroke="#7fc2ca" stroke-opacity="0.45" stroke-width="2.4"/>
+        <path d="M559,562 C663,529 769,519 891,528 C981,534 1041,551 1086,567" fill="none" stroke="#98d2db" stroke-opacity="0.7" stroke-width="3"/>
+        <path d="M582,497 C676,468 783,458 899,469 C969,475 1026,488 1067,502" fill="none" stroke="#98d2db" stroke-opacity="0.65" stroke-width="3"/>
+        <path d="M636,434 C707,413 794,404 889,411 C951,416 1003,426 1042,438" fill="none" stroke="#98d2db" stroke-opacity="0.58" stroke-width="2.8"/>
+        <path d="M507,636 L1132,636" fill="none" stroke="#b7ebef" stroke-opacity="0.85" stroke-width="5"/>
+        <path d="M792,345 L792,636" fill="none" stroke="#8cc9d1" stroke-width="3.5"/>
+        <path d="M677,388 L677,636" fill="none" stroke="#8cc9d1" stroke-width="3"/>
+        <path d="M908,392 L908,636" fill="none" stroke="#8cc9d1" stroke-width="3"/>
+        <path d="M574,463 L574,636" fill="none" stroke="#8cc9d1" stroke-width="2.6"/>
+        <path d="M1014,468 L1014,636" fill="none" stroke="#8cc9d1" stroke-width="2.6"/>
+      </g>
+      <g opacity="0.2">
+        <use href="#triRib" x="615" y="430" width="120" height="120" transform="rotate(-6 675 490)"/>
+        <use href="#triRib" x="720" y="399" width="135" height="135" transform="rotate(4 787 466)"/>
+        <use href="#triRib" x="855" y="421" width="118" height="118" transform="rotate(8 914 480)"/>
+      </g>
+      <g id="glass-reflections" opacity="0.6" mask="url(#reflectionFadeMask)">
+        <path d="M595,405 C633,385 689,372 722,377 C701,410 665,446 618,473 C582,494 550,504 520,509 C532,470 560,430 595,405 Z" fill="#eefcff" opacity="0.23"/>
+        <path d="M927,381 C983,401 1030,436 1069,495 C1034,492 1003,481 968,460 C926,436 899,409 882,373 C900,371 915,375 927,381 Z" fill="#e6f8ff" opacity="0.16"/>
+        <path d="M728,355 C772,347 828,348 862,354 C852,382 832,401 804,421 C775,401 747,381 728,355 Z" fill="#f0fdff" opacity="0.12"/>
+      </g>
+    </g>
+  </g>
+
+  <g id="foreground">
+    <path d="M0,721 C155,702 246,722 340,745 C420,763 501,768 610,748 C706,731 779,700 892,711 C1051,726 1118,776 1268,769 C1380,764 1487,726 1600,709 L1600,1000 L0,1000 Z" fill="url(#pavementGrad)"/>
+
+    <g id="pavement-pattern" opacity="0.18">
+      <path d="M0,817 C174,786 329,775 484,786 C652,798 801,829 989,820 C1208,809 1400,761 1600,739" fill="none" stroke="#9cb4bf" stroke-width="2"/>
+      <path d="M0,882 C198,845 329,842 477,856 C635,872 807,906 1011,899 C1216,892 1397,847 1600,801" fill="none" stroke="#a4bac3" stroke-width="2"/>
+      <path d="M198,720 C214,776 223,849 218,1000" fill="none" stroke="#8098a3" stroke-width="2"/>
+      <path d="M439,735 C447,791 458,875 459,1000" fill="none" stroke="#8198a1" stroke-width="2"/>
+      <path d="M781,713 C784,778 790,887 788,1000" fill="none" stroke="#8096a0" stroke-width="2"/>
+      <path d="M1126,737 C1120,807 1114,889 1110,1000" fill="none" stroke="#7d949d" stroke-width="2"/>
+      <path d="M1394,724 C1386,810 1381,889 1382,1000" fill="none" stroke="#7d939d" stroke-width="2"/>
+    </g>
+
+    <g id="puddles">
+      <path d="M153,786 C210,759 285,756 343,783 C361,792 363,810 343,820 C287,848 195,846 146,819 C125,808 132,794 153,786 Z" fill="url(#puddleGrad)"/>
+      <path d="M573,788 C637,760 719,754 791,779 C821,789 825,815 792,830 C724,862 621,862 563,834 C531,819 534,798 573,788 Z" fill="url(#puddleGrad)"/>
+      <path d="M1056,823 C1128,791 1245,786 1329,820 C1362,833 1360,853 1324,866 C1244,895 1138,895 1056,867 C1021,855 1021,838 1056,823 Z" fill="url(#puddleGrad)"/>
+      <path d="M842,906 C889,887 963,885 1010,906 C1028,914 1031,930 1013,937 C970,955 879,956 839,940 C819,932 820,915 842,906 Z" fill="url(#puddleGrad)"/>
+    </g>
+
+    <g id="reflections" clip-path="url(#puddleClip)" mask="url(#reflectionFadeMask)" opacity="0.62">
+      <g transform="translate(0 1404) scale(1 -1)" filter="url(#waterDistort)">
+        <use href="#bridgePath" fill="none" stroke="#cfe4e8" stroke-opacity="0.24" stroke-width="7"/>
+        <path d="M400,625 L452,593 L581,593 L648,541 L760,541 L804,575 L861,575 L926,531 L1040,531 L1119,598 L1216,604 L1216,681 L398,681 Z" fill="#d4b470" opacity="0.16"/>
+        <path d="M510,636 C507,590 512,563 529,527 C571,437 644,376 741,351 C822,331 900,345 972,392 C1058,448 1110,521 1128,633" fill="none" stroke="#d7f9ff" stroke-opacity="0.26" stroke-width="4"/>
+        <path d="M559,562 C663,529 769,519 891,528 C981,534 1041,551 1086,567" fill="none" stroke="#d8fcff" stroke-opacity="0.18" stroke-width="3"/>
+        <path d="M582,497 C676,468 783,458 899,469 C969,475 1026,488 1067,502" fill="none" stroke="#d8fcff" stroke-opacity="0.15" stroke-width="3"/>
+        <g opacity="0.22">
+          <path d="M595,405 C633,385 689,372 722,377 C701,410 665,446 618,473 C582,494 550,504 520,509 C532,470 560,430 595,405 Z" fill="#f1fdff"/>
+          <path d="M927,381 C983,401 1030,436 1069,495 C1034,492 1003,481 968,460 C926,436 899,409 882,373 C900,371 915,375 927,381 Z" fill="#f1fdff"/>
+        </g>
+        <path d="M0,570 C178,555 264,592 396,590 C487,589 599,558 744,565 C917,573 1031,621 1189,620 C1349,619 1431,572 1600,587" fill="none" stroke="#d7eef7" stroke-opacity="0.12" stroke-width="14"/>
+      </g>
+    </g>
+
+    <g id="foreground-vegetation">
+      <g transform="translate(90 795) scale(0.8)"><use href="#plantCluster"/></g>
+      <g transform="translate(285 806) scale(0.65)"><use href="#plantCluster"/></g>
+      <g transform="translate(1260 794) scale(0.82)"><use href="#plantCluster"/></g>
+      <g transform="translate(1430 808) scale(0.66)"><use href="#plantCluster"/></g>
+    </g>
+
+    <g id="rain-sheen" opacity="0.22" filter="url(#puddleBlur)">
+      <path d="M51,742 C171,731 237,755 343,774 C430,790 541,787 655,759 C734,739 825,728 939,742 C1086,761 1161,795 1298,792 C1400,790 1494,765 1580,745" fill="none" stroke="#d6ecf4" stroke-width="10" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
