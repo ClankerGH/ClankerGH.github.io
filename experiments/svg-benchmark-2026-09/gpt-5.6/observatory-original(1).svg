@@ -1,0 +1,446 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" aria-labelledby="title desc" role="img">
+  <title id="title">Rain-soaked solarpunk botanical observatory at blue hour</title>
+  <desc id="desc">A futuristic botanical observatory with a glowing glass geodesic dome beside a lake at blue hour, with wet pavement, puddle reflections, a bridge and autonomous tram, distant mountains, mist, moon, stars, clouds, vegetation, and a subtle city.</desc>
+
+  <defs>
+    <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071324"/>
+      <stop offset="38%" stop-color="#153054"/>
+      <stop offset="70%" stop-color="#234d73"/>
+      <stop offset="100%" stop-color="#5b7a86"/>
+    </linearGradient>
+
+    <radialGradient id="skyBloom" cx="72%" cy="22%" r="48%">
+      <stop offset="0%" stop-color="#8fd2ff" stop-opacity="0.16"/>
+      <stop offset="45%" stop-color="#5ca3d8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#1a2e4e" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="mountainFarGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#314d73"/>
+      <stop offset="100%" stop-color="#223954"/>
+    </linearGradient>
+
+    <linearGradient id="mountainMidGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#243f5c"/>
+      <stop offset="100%" stop-color="#182d44"/>
+    </linearGradient>
+
+    <linearGradient id="waterGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2e5f78"/>
+      <stop offset="32%" stop-color="#234e67"/>
+      <stop offset="100%" stop-color="#153547"/>
+    </linearGradient>
+
+    <linearGradient id="pavementGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4c5d66"/>
+      <stop offset="50%" stop-color="#33414a"/>
+      <stop offset="100%" stop-color="#212b31"/>
+    </linearGradient>
+
+    <linearGradient id="glassGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b5e7f8" stop-opacity="0.22"/>
+      <stop offset="35%" stop-color="#9fd9ef" stop-opacity="0.14"/>
+      <stop offset="70%" stop-color="#78b8d6" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#5b93b5" stop-opacity="0.18"/>
+    </linearGradient>
+
+    <linearGradient id="glassRibTint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9fe7e2" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#d5f5ff" stop-opacity="0.45"/>
+    </linearGradient>
+
+    <linearGradient id="buildingGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4b686f"/>
+      <stop offset="55%" stop-color="#334e57"/>
+      <stop offset="100%" stop-color="#273d46"/>
+    </linearGradient>
+
+    <linearGradient id="bridgeGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f686f"/>
+      <stop offset="100%" stop-color="#7ca39c"/>
+    </linearGradient>
+
+    <radialGradient id="warmGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe9af" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#ffc66a" stop-opacity="0.48"/>
+      <stop offset="100%" stop-color="#ffbf5f" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="windowGlow" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#fff4cf" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#e8b86a" stop-opacity="0.12"/>
+    </radialGradient>
+
+    <radialGradient id="puddleFill" cx="45%" cy="35%" r="85%">
+      <stop offset="0%" stop-color="#8aa8b5" stop-opacity="0.55"/>
+      <stop offset="35%" stop-color="#537182" stop-opacity="0.46"/>
+      <stop offset="100%" stop-color="#20323e" stop-opacity="0.82"/>
+    </radialGradient>
+
+    <linearGradient id="reflectionMaskGrad" x1="0" y1="560" x2="0" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="mistFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#d9ecf3" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#d9ecf3" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="mistFilter" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.06" numOctaves="2" seed="11" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        0 0 0 .22 0" result="mistAlpha"/>
+      <feGaussianBlur in="mistAlpha" stdDeviation="8" result="mistSoft"/>
+      <feBlend in="SourceGraphic" in2="mistSoft" mode="screen"/>
+    </filter>
+
+    <filter id="waterRipple" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018 0.08" numOctaves="2" seed="5" result="ripples"/>
+      <feDisplacementMap in="SourceGraphic" in2="ripples" scale="9" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <filter id="puddleRipple" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03 0.12" numOctaves="2" seed="8" result="ripples"/>
+      <feDisplacementMap in="SourceGraphic" in2="ripples" scale="5" xChannelSelector="R" yChannelSelector="B"/>
+    </filter>
+
+    <symbol id="starSymbol" viewBox="0 0 20 20">
+      <path d="M10 1 L11.7 7.3 L18 10 L11.7 12.7 L10 19 L8.3 12.7 L2 10 L8.3 7.3 Z" fill="#d4ebff"/>
+    </symbol>
+
+    <symbol id="leafCluster" viewBox="0 0 100 160">
+      <path d="M48 154 C56 122 46 85 24 38 C42 44 60 66 67 94 C73 119 67 143 57 156 Z" fill="#2b8d64"/>
+      <path d="M50 154 C56 120 78 82 94 28 C73 38 55 57 47 88 C42 112 43 139 50 154 Z" fill="#48b87f"/>
+      <path d="M50 145 C43 117 45 71 61 14 C72 34 76 63 71 91 C67 115 58 133 50 145 Z" fill="#7fdca3"/>
+      <path d="M50 156 C51 121 51 80 53 18" fill="none" stroke="#173f2a" stroke-width="3" stroke-linecap="round"/>
+      <path d="M52 95 C65 96 77 87 84 75" fill="none" stroke="#255740" stroke-width="2" stroke-linecap="round"/>
+      <path d="M51 109 C37 110 29 101 20 84" fill="none" stroke="#255740" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="reedCluster" viewBox="0 0 70 140">
+      <path d="M14 136 C18 102 12 67 21 18" fill="none" stroke="#315b40" stroke-width="3" stroke-linecap="round"/>
+      <path d="M28 138 C31 103 29 71 34 10" fill="none" stroke="#3f6e4b" stroke-width="3" stroke-linecap="round"/>
+      <path d="M43 138 C48 108 47 69 53 26" fill="none" stroke="#426f48" stroke-width="3" stroke-linecap="round"/>
+      <path d="M57 136 C60 109 58 77 63 33" fill="none" stroke="#315b40" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M18 26 C25 20 27 12 27 5 C21 9 18 16 18 26 Z" fill="#a98b56"/>
+      <path d="M33 18 C40 12 42 5 42 0 C37 4 33 10 33 18 Z" fill="#b79960"/>
+      <path d="M52 34 C58 28 61 20 60 12 C56 18 53 24 52 34 Z" fill="#a98b56"/>
+    </symbol>
+
+    <clipPath id="domeClip">
+      <path d="M700 560 C714 455 768 382 847 341 C916 305 1005 301 1078 325 C1169 356 1230 430 1240 560 Z"/>
+    </clipPath>
+
+    <clipPath id="waterClip">
+      <path d="M0 520 C217 526 366 504 529 520 C733 539 920 521 1112 530 C1321 539 1467 511 1600 520 L1600 736 C1415 715 1224 702 1038 700 C785 697 536 705 0 724 Z"/>
+    </clipPath>
+
+    <clipPath id="puddleClipA">
+      <path d="M230 770 C298 737 404 739 472 768 C523 789 520 825 465 839 C371 863 241 849 205 808 C187 787 197 780 230 770 Z"/>
+    </clipPath>
+
+    <clipPath id="puddleClipB">
+      <path d="M1078 792 C1142 769 1264 771 1338 803 C1386 823 1385 856 1327 868 C1242 886 1118 879 1076 847 C1037 817 1043 804 1078 792 Z"/>
+    </clipPath>
+
+    <mask id="waterReflectionMask">
+      <rect x="0" y="560" width="1600" height="240" fill="url(#reflectionMaskGrad)"/>
+    </mask>
+  </defs>
+
+  <g id="background">
+    <rect x="0" y="0" width="1600" height="1000" fill="url(#skyGradient)"/>
+    <rect x="0" y="0" width="1600" height="480" fill="url(#skyBloom)"/>
+
+    <g id="stars" opacity="0.85">
+      <use href="#starSymbol" transform="translate(130 86) scale(0.6)"/>
+      <use href="#starSymbol" transform="translate(218 140) scale(0.34)"/>
+      <use href="#starSymbol" transform="translate(340 90) scale(0.5)"/>
+      <use href="#starSymbol" transform="translate(431 168) scale(0.28)"/>
+      <use href="#starSymbol" transform="translate(560 112) scale(0.44)"/>
+      <use href="#starSymbol" transform="translate(672 60) scale(0.24)"/>
+      <use href="#starSymbol" transform="translate(786 118) scale(0.38)"/>
+      <use href="#starSymbol" transform="translate(920 83) scale(0.46)"/>
+      <use href="#starSymbol" transform="translate(1035 132) scale(0.32)"/>
+      <use href="#starSymbol" transform="translate(1118 78) scale(0.56)"/>
+      <use href="#starSymbol" transform="translate(1256 96) scale(0.42)"/>
+      <use href="#starSymbol" transform="translate(1360 72) scale(0.34)"/>
+      <use href="#starSymbol" transform="translate(1476 120) scale(0.24)"/>
+    </g>
+
+    <g id="moon">
+      <circle cx="1290" cy="135" r="55" fill="#a7d7ff" opacity="0.13" filter="url(#softBlur)"/>
+      <path fill="#eef7ff" fill-rule="evenodd" d="M1292 84 A54 54 0 1 1 1291.9 192 A54 54 0 1 1 1292 84 Z M1311 98 A42 42 0 1 0 1310.9 178 A42 42 0 1 0 1311 98 Z"/>
+    </g>
+
+    <g id="clouds" filter="url(#softBlur)" opacity="0.52">
+      <path d="M130 175 C205 145 313 149 374 176 C441 206 445 253 365 260 C275 269 150 253 100 219 C76 202 78 187 130 175 Z" fill="#cad9ea"/>
+      <path d="M480 128 C553 101 667 110 731 139 C798 170 794 216 722 224 C633 234 518 221 461 191 C425 172 432 146 480 128 Z" fill="#c0d3e6"/>
+      <path d="M916 170 C986 143 1089 147 1151 173 C1216 201 1216 241 1142 250 C1058 259 955 245 902 216 C871 198 871 183 916 170 Z" fill="#b8cde2"/>
+    </g>
+  </g>
+
+  <g id="mountains">
+    <path d="M0 452 C91 413 149 400 224 419 C311 441 365 445 430 421 C527 386 610 352 701 382 C790 412 840 431 924 416 C1038 396 1084 341 1172 352 C1260 364 1311 432 1381 442 C1454 453 1510 428 1600 389 L1600 585 L0 585 Z" fill="url(#mountainFarGrad)" opacity="0.62"/>
+    <path d="M0 486 C88 460 151 432 249 440 C347 448 441 481 521 462 C624 437 690 389 782 405 C867 419 931 473 1002 470 C1097 466 1156 412 1243 420 C1332 429 1404 485 1490 488 C1531 490 1568 482 1600 468 L1600 606 L0 606 Z" fill="url(#mountainMidGrad)" opacity="0.82"/>
+    <path d="M0 529 C103 503 192 504 277 519 C358 534 430 554 520 551 C608 548 685 519 776 513 C876 507 941 534 1018 546 C1118 561 1203 571 1296 559 C1403 545 1498 515 1600 511 L1600 620 L0 620 Z" fill="#21394b" opacity="0.96"/>
+
+    <g id="distant-city" opacity="0.55">
+      <path d="M168 475 L179 475 L179 451 L191 451 L191 475 L202 475 L202 440 L216 440 L216 475 L229 475 L229 460 L241 460 L241 475 L252 475 L252 445 L268 445 L268 475 L279 475 L279 454 L293 454 L293 475 L308 475 L308 437 L322 437 L322 475 L336 475 L336 449 L351 449 L351 475 L366 475 L366 441 L382 441 L382 475 L395 475 L395 459 L408 459 L408 475 L421 475 L421 468 L434 468 L434 475 L434 481 L168 481 Z" fill="#2c3f58"/>
+      <g fill="#ffdd9a">
+        <rect x="176" y="458" width="2" height="5" opacity="0.65"/>
+        <rect x="196" y="446" width="2" height="6" opacity="0.65"/>
+        <rect x="221" y="448" width="2" height="5" opacity="0.65"/>
+        <rect x="245" y="454" width="2" height="5" opacity="0.5"/>
+        <rect x="270" y="453" width="2" height="5" opacity="0.65"/>
+        <rect x="315" y="444" width="2" height="6" opacity="0.5"/>
+        <rect x="359" y="452" width="2" height="5" opacity="0.6"/>
+      </g>
+    </g>
+  </g>
+
+  <g id="atmosphere-back" opacity="0.65" filter="url(#mistFilter)">
+    <path d="M0 446 C241 425 377 437 520 470 C669 504 843 502 988 483 C1144 462 1316 426 1600 433 L1600 556 C1331 552 1196 565 1026 576 C847 588 664 586 493 570 C337 555 170 548 0 564 Z" fill="url(#mistFade)"/>
+  </g>
+
+  <g id="water">
+    <path d="M0 520 C217 526 366 504 529 520 C733 539 920 521 1112 530 C1321 539 1467 511 1600 520 L1600 736 C1415 715 1224 702 1038 700 C785 697 536 705 0 724 Z" fill="url(#waterGradient)"/>
+    <path d="M0 549 C180 554 333 541 489 554 C655 568 828 567 1017 556 C1228 544 1423 534 1600 544" fill="none" stroke="#7fb5cf" stroke-opacity="0.25" stroke-width="2"/>
+    <path d="M40 585 C175 589 282 583 389 589 C560 598 708 606 918 595 C1114 585 1362 569 1547 576" fill="none" stroke="#94cade" stroke-opacity="0.18" stroke-width="2"/>
+    <path d="M75 631 C219 633 370 633 534 640 C731 647 910 648 1090 640 C1269 632 1419 620 1516 621" fill="none" stroke="#c6efff" stroke-opacity="0.12" stroke-width="1.6"/>
+
+    <g id="shoreline" opacity="0.72">
+      <path d="M0 663 C103 657 186 657 259 664 C376 674 461 680 558 678 C658 676 707 663 810 656 C930 647 1014 652 1094 661 C1184 671 1259 683 1374 684 C1465 684 1534 676 1600 669 L1600 704 C1505 709 1421 714 1330 714 C1204 714 1141 700 1029 695 C934 691 863 692 755 699 C651 705 562 707 447 705 C302 702 175 690 0 700 Z" fill="#264854"/>
+    </g>
+  </g>
+
+  <g id="observatory">
+    <g id="complex-base">
+      <path d="M626 633 C646 582 674 563 718 558 L1236 558 C1298 560 1335 584 1354 626 L1358 651 L610 651 Z" fill="#1c2b35" opacity="0.78"/>
+      <path d="M652 601 L1243 601 C1281 602 1308 616 1324 639 L1327 649 L633 649 L639 626 C641 617 646 609 652 601 Z" fill="url(#buildingGradient)"/>
+      <path d="M610 651 L1358 651 L1370 684 L596 684 Z" fill="#263740"/>
+      <path d="M672 603 L760 603 L742 648 L646 648 Z" fill="#516971" opacity="0.54"/>
+      <path d="M862 603 L975 603 L971 649 L858 649 Z" fill="#5a737b" opacity="0.35"/>
+      <path d="M1164 603 L1241 603 L1260 648 L1178 648 Z" fill="#63828a" opacity="0.38"/>
+    </g>
+
+    <g id="left-wing">
+      <path d="M583 560 C631 507 710 494 785 500 L824 503 C850 506 867 521 877 538 L884 558 L583 558 Z" fill="url(#buildingGradient)"/>
+      <path d="M596 520 C648 486 709 473 789 479 C817 481 833 487 845 496 C856 505 863 515 866 523 L865 531 L597 531 Z" fill="#49656d"/>
+      <path d="M611 531 C622 511 642 497 661 487 L742 487 C774 489 797 494 814 506 C827 515 834 523 836 531 Z" fill="#7cb383" opacity="0.30"/>
+      <path d="M605 558 L884 558 L888 602 L622 602 Z" fill="#2a404a"/>
+      <path d="M619 572 L840 572" fill="none" stroke="#8db0b7" stroke-opacity="0.22" stroke-width="2"/>
+      <path d="M624 588 L844 588" fill="none" stroke="#8db0b7" stroke-opacity="0.22" stroke-width="2"/>
+
+      <g id="left-wing-windows">
+        <path d="M640 563 L680 563 L676 597 L636 597 Z" fill="url(#windowGlow)" opacity="0.9"/>
+        <path d="M690 563 L730 563 L726 597 L686 597 Z" fill="url(#windowGlow)" opacity="0.84"/>
+        <path d="M740 563 L780 563 L776 597 L736 597 Z" fill="url(#windowGlow)" opacity="0.9"/>
+        <path d="M790 563 L830 563 L826 597 L786 597 Z" fill="url(#windowGlow)" opacity="0.8"/>
+      </g>
+    </g>
+
+    <g id="bridge">
+      <path d="M442 606 C545 593 660 592 780 607 L779 624 C661 609 547 611 444 624 Z" fill="url(#bridgeGradient)"/>
+      <path d="M454 624 C554 612 662 614 768 627 L761 640 C653 629 551 629 449 640 Z" fill="#364d57"/>
+      <path d="M491 641 L508 642 L502 684 L483 684 Z" fill="#30464f"/>
+      <path d="M597 634 L614 635 L608 684 L589 684 Z" fill="#30464f"/>
+      <path d="M705 636 L722 637 L717 684 L698 684 Z" fill="#30464f"/>
+      <path d="M447 606 C436 596 431 586 431 575 C431 565 437 559 446 556 C453 553 463 554 471 560 C480 567 485 575 486 586" fill="none" stroke="#6b8f96" stroke-width="4" stroke-linecap="round" stroke-opacity="0.7"/>
+      <path d="M771 607 C783 598 790 590 792 581 C794 569 790 562 782 558 C775 554 765 554 758 559 C748 567 742 577 739 590" fill="none" stroke="#6b8f96" stroke-width="4" stroke-linecap="round" stroke-opacity="0.7"/>
+
+      <g id="tram">
+        <path d="M592 583 C602 577 617 574 635 574 L679 574 C698 574 713 578 722 586 C729 592 731 601 726 608 C721 616 709 621 694 622 L617 622 C599 622 586 617 580 608 C575 601 579 589 592 583 Z" fill="#dfe8ea"/>
+        <path d="M603 585 L642 585 L642 607 L595 607 C591 607 588 605 587 601 C586 596 589 590 603 585 Z" fill="#87d2df" opacity="0.9"/>
+        <path d="M648 585 L680 585 L680 607 L648 607 Z" fill="#9ddae5" opacity="0.92"/>
+        <path d="M685 585 L712 588 C718 590 721 594 720 599 C719 604 715 607 709 607 L685 607 Z" fill="#7fc8d6" opacity="0.9"/>
+        <path d="M597 609 L713 609" fill="none" stroke="#73868d" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="611" cy="620" r="5" fill="#3e525c"/>
+        <circle cx="689" cy="620" r="5" fill="#3e525c"/>
+        <circle cx="726" cy="601" r="10" fill="#d4fbff" opacity="0.45" filter="url(#glow)"/>
+        <circle cx="581" cy="601" r="9" fill="#ffd8a1" opacity="0.40" filter="url(#glow)"/>
+      </g>
+    </g>
+
+    <g id="dome-structure">
+      <path d="M700 560 C714 455 768 382 847 341 C916 305 1005 301 1078 325 C1169 356 1230 430 1240 560 Z" fill="url(#glassGradient)" stroke="#b7f3f5" stroke-opacity="0.52" stroke-width="4"/>
+
+      <g clip-path="url(#domeClip)">
+        <rect x="700" y="320" width="550" height="250" fill="url(#glassGradient)"/>
+
+        <g id="dome-interior" opacity="0.95">
+          <path d="M752 559 C758 512 785 475 829 452 C873 429 936 422 994 427 C1048 432 1097 450 1136 479 C1172 506 1197 530 1207 559 Z" fill="#214238" opacity="0.46"/>
+          <path d="M790 558 C797 519 824 489 861 469 C903 446 958 439 1009 443 C1058 447 1104 462 1140 488 C1173 510 1192 533 1200 558 Z" fill="#2a513f" opacity="0.4"/>
+
+          <g id="interior-plants">
+            <use href="#leafCluster" transform="translate(742 458) scale(1.0)"/>
+            <use href="#leafCluster" transform="translate(812 432) scale(1.12)"/>
+            <use href="#leafCluster" transform="translate(904 420) scale(1.26)"/>
+            <use href="#leafCluster" transform="translate(1008 430) scale(1.18)"/>
+            <use href="#leafCluster" transform="translate(1104 454) scale(0.98)"/>
+            <use href="#leafCluster" transform="translate(860 465) scale(0.88)"/>
+            <use href="#leafCluster" transform="translate(959 470) scale(0.82)"/>
+            <path d="M736 559 C790 542 857 532 928 531 C999 530 1076 538 1188 559" fill="none" stroke="#598267" stroke-opacity="0.55" stroke-width="3"/>
+          </g>
+
+          <g id="catwalks" stroke-linecap="round" stroke="#b9d8df" stroke-opacity="0.72" fill="none">
+            <path d="M794 474 C856 467 937 465 1023 469 C1086 472 1146 479 1185 487" stroke-width="3"/>
+            <path d="M778 518 C845 508 930 505 1014 509 C1087 513 1155 522 1201 531" stroke-width="3"/>
+            <path d="M834 453 L834 515" stroke-width="2.4"/>
+            <path d="M983 445 L983 508" stroke-width="2.4"/>
+            <path d="M1120 472 L1120 523" stroke-width="2.4"/>
+            <path d="M818 489 L850 489" stroke-width="5"/>
+            <path d="M968 482 L998 482" stroke-width="5"/>
+            <path d="M1106 506 L1135 506" stroke-width="5"/>
+          </g>
+
+          <g id="interior-lighting">
+            <circle cx="840" cy="486" r="38" fill="url(#warmGlow)"/>
+            <circle cx="969" cy="476" r="46" fill="url(#warmGlow)"/>
+            <circle cx="1121" cy="505" r="36" fill="url(#warmGlow)"/>
+            <circle cx="902" cy="533" r="28" fill="url(#warmGlow)"/>
+          </g>
+
+          <g id="dome-ribs" stroke="url(#glassRibTint)" stroke-width="2.2" fill="none">
+            <path d="M722 520 C839 491 1015 490 1201 520"/>
+            <path d="M714 483 C836 443 1010 443 1221 485"/>
+            <path d="M706 446 C835 392 1015 394 1231 449"/>
+            <path d="M727 407 C851 344 1023 346 1214 414"/>
+
+            <path d="M774 560 C785 482 825 393 898 333"/>
+            <path d="M850 560 C858 476 896 380 962 321"/>
+            <path d="M940 560 C941 470 973 374 1028 321"/>
+            <path d="M1032 560 C1026 475 1048 386 1097 332"/>
+            <path d="M1120 560 C1107 487 1113 413 1164 354"/>
+
+            <path d="M732 520 C794 489 844 460 878 432"/>
+            <path d="M878 432 C941 442 995 442 1050 434"/>
+            <path d="M1050 434 C1109 456 1160 487 1216 518"/>
+
+            <path d="M741 477 C799 461 840 447 875 423"/>
+            <path d="M875 423 C939 425 1007 424 1070 419"/>
+            <path d="M1070 419 C1126 439 1176 462 1226 482"/>
+          </g>
+
+          <g id="glass-reflections" opacity="0.72">
+            <path d="M811 345 C846 347 878 355 901 370 C918 381 926 395 920 410 C914 425 895 432 871 433 C832 435 794 421 775 398 C758 378 769 360 811 345 Z" fill="#e8fbff" fill-opacity="0.16"/>
+            <path d="M984 332 C1034 331 1088 342 1130 364 C1163 382 1183 404 1180 424 C1176 448 1143 457 1103 454 C1044 449 997 423 976 391 C962 370 966 354 984 332 Z" fill="#eefcff" fill-opacity="0.12"/>
+            <path d="M742 418 C851 392 1008 386 1161 410" fill="none" stroke="#eafcff" stroke-opacity="0.28" stroke-width="5" stroke-linecap="round"/>
+            <path d="M756 508 C858 490 998 490 1188 518" fill="none" stroke="#f4ffff" stroke-opacity="0.20" stroke-width="4" stroke-linecap="round"/>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <g id="facade-and-signage">
+      <path d="M788 596 L1176 596 L1189 642 L781 642 Z" fill="#314852"/>
+      <path d="M820 606 L1145 606 L1154 629 L812 629 Z" fill="#243843"/>
+      <g id="main-windows">
+        <path d="M829 608 L881 608 L884 627 L824 627 Z" fill="url(#windowGlow)" opacity="0.75"/>
+        <path d="M893 608 L943 608 L945 627 L889 627 Z" fill="url(#windowGlow)" opacity="0.92"/>
+        <path d="M955 608 L1010 608 L1011 627 L951 627 Z" fill="url(#windowGlow)" opacity="0.82"/>
+        <path d="M1022 608 L1075 608 L1075 627 L1018 627 Z" fill="url(#windowGlow)" opacity="0.9"/>
+        <path d="M1087 608 L1137 608 L1133 627 L1083 627 Z" fill="url(#windowGlow)" opacity="0.74"/>
+      </g>
+      <text x="978" y="620" text-anchor="middle" font-family="Verdana, DejaVu Sans, sans-serif" font-size="18" letter-spacing="3.2" fill="#d6f0e8" opacity="0.78">AURELIA BOTANICAL OBSERVATORY</text>
+      <path d="M792 641 L1187 641" fill="none" stroke="#87afb7" stroke-opacity="0.24" stroke-width="2"/>
+    </g>
+
+    <g id="planters">
+      <path d="M776 644 L844 644 L838 659 L770 659 Z" fill="#32474c"/>
+      <path d="M952 644 L1020 644 L1015 659 L946 659 Z" fill="#32474c"/>
+      <path d="M1110 644 L1177 644 L1173 659 L1105 659 Z" fill="#32474c"/>
+      <use href="#leafCluster" transform="translate(774 585) scale(0.42)"/>
+      <use href="#leafCluster" transform="translate(949 587) scale(0.45)"/>
+      <use href="#leafCluster" transform="translate(1109 585) scale(0.43)"/>
+    </g>
+  </g>
+
+  <g id="water-reflections" clip-path="url(#waterClip)" mask="url(#waterReflectionMask)" filter="url(#waterRipple)" opacity="0.42">
+    <g transform="translate(0 1116) scale(1 -1)">
+      <path d="M700 560 C714 455 768 382 847 341 C916 305 1005 301 1078 325 C1169 356 1230 430 1240 560 Z" fill="#9ed6df"/>
+      <path d="M583 560 C631 507 710 494 785 500 L824 503 C850 506 867 521 877 538 L884 558 L583 558 Z" fill="#85b5b6"/>
+      <path d="M626 633 C646 582 674 563 718 558 L1236 558 C1298 560 1335 584 1354 626 L1358 651 L610 651 Z" fill="#7aa8ab"/>
+      <path d="M442 606 C545 593 660 592 780 607 L779 624 C661 609 547 611 444 624 Z" fill="#8eb9ba"/>
+      <path d="M592 583 C602 577 617 574 635 574 L679 574 C698 574 713 578 722 586 C729 592 731 601 726 608 C721 616 709 621 694 622 L617 622 C599 622 586 617 580 608 C575 601 579 589 592 583 Z" fill="#dceef1"/>
+      <path d="M788 596 L1176 596 L1189 642 L781 642 Z" fill="#a8d6d8"/>
+      <path d="M752 559 C758 512 785 475 829 452 C873 429 936 422 994 427 C1048 432 1097 450 1136 479 C1172 506 1197 530 1207 559 Z" fill="#5d8e7b"/>
+      <path d="M0 663 C103 657 186 657 259 664 C376 674 461 680 558 678 C658 676 707 663 810 656 C930 647 1014 652 1094 661 C1184 671 1259 683 1374 684 C1465 684 1534 676 1600 669 L1600 704 C1505 709 1421 714 1330 714 C1204 714 1141 700 1029 695 C934 691 863 692 755 699 C651 705 562 707 447 705 C302 702 175 690 0 700 Z" fill="#587985" opacity="0.35"/>
+    </g>
+  </g>
+
+  <g id="vegetation">
+    <use href="#reedCluster" transform="translate(58 622) scale(0.95)"/>
+    <use href="#reedCluster" transform="translate(120 631) scale(0.8)"/>
+    <use href="#reedCluster" transform="translate(1476 618) scale(1.05)"/>
+    <use href="#reedCluster" transform="translate(1410 629) scale(0.84)"/>
+    <use href="#reedCluster" transform="translate(1322 648) scale(0.65)"/>
+    <use href="#reedCluster" transform="translate(286 648) scale(0.74)"/>
+    <use href="#reedCluster" transform="translate(356 654) scale(0.6)"/>
+  </g>
+
+  <g id="foreground">
+    <path d="M0 690 C248 664 458 649 699 654 C996 660 1253 693 1600 742 L1600 1000 L0 1000 Z" fill="url(#pavementGradient)"/>
+
+    <path d="M18 737 C261 714 482 709 684 719 C920 730 1158 760 1578 810" fill="none" stroke="#7a9099" stroke-opacity="0.22" stroke-width="2"/>
+    <path d="M96 808 C302 788 518 785 704 793 C955 804 1200 831 1492 877" fill="none" stroke="#738891" stroke-opacity="0.18" stroke-width="2"/>
+    <path d="M284 679 C293 710 303 738 309 769" fill="none" stroke="#cde6ef" stroke-opacity="0.12" stroke-width="1.2"/>
+    <path d="M765 671 C777 716 791 760 804 805" fill="none" stroke="#cde6ef" stroke-opacity="0.10" stroke-width="1.2"/>
+    <path d="M1189 689 C1201 730 1214 772 1229 820" fill="none" stroke="#cde6ef" stroke-opacity="0.09" stroke-width="1.2"/>
+
+    <path d="M230 770 C298 737 404 739 472 768 C523 789 520 825 465 839 C371 863 241 849 205 808 C187 787 197 780 230 770 Z" fill="url(#puddleFill)" stroke="#9fb9c5" stroke-opacity="0.18" stroke-width="2"/>
+    <path d="M1078 792 C1142 769 1264 771 1338 803 C1386 823 1385 856 1327 868 C1242 886 1118 879 1076 847 C1037 817 1043 804 1078 792 Z" fill="url(#puddleFill)" stroke="#9fb9c5" stroke-opacity="0.18" stroke-width="2"/>
+
+    <g id="puddle-reflections-a" clip-path="url(#puddleClipA)" filter="url(#puddleRipple)" opacity="0.52">
+      <rect x="190" y="732" width="350" height="130" fill="#27495b" opacity="0.35"/>
+      <g transform="translate(-380 1350) scale(0.62 -0.34)">
+        <path d="M700 560 C714 455 768 382 847 341 C916 305 1005 301 1078 325 C1169 356 1230 430 1240 560 Z" fill="#d8f1f5"/>
+        <path d="M583 560 C631 507 710 494 785 500 L824 503 C850 506 867 521 877 538 L884 558 L583 558 Z" fill="#cce6df"/>
+        <path d="M626 633 C646 582 674 563 718 558 L1236 558 C1298 560 1335 584 1354 626 L1358 651 L610 651 Z" fill="#b1d6da"/>
+        <path d="M442 606 C545 593 660 592 780 607 L779 624 C661 609 547 611 444 624 Z" fill="#c9e7e8"/>
+      </g>
+      <path d="M214 799 C276 775 353 773 431 784 C472 791 507 800 523 815" fill="none" stroke="#dff9ff" stroke-opacity="0.25" stroke-width="2"/>
+    </g>
+
+    <g id="puddle-reflections-b" clip-path="url(#puddleClipB)" filter="url(#puddleRipple)" opacity="0.44">
+      <rect x="1042" y="767" width="320" height="120" fill="#294658" opacity="0.34"/>
+      <g transform="translate(388 1372) scale(0.48 -0.26)">
+        <path d="M700 560 C714 455 768 382 847 341 C916 305 1005 301 1078 325 C1169 356 1230 430 1240 560 Z" fill="#dbf4f6"/>
+        <path d="M626 633 C646 582 674 563 718 558 L1236 558 C1298 560 1335 584 1354 626 L1358 651 L610 651 Z" fill="#badbde"/>
+        <path d="M592 583 C602 577 617 574 635 574 L679 574 C698 574 713 578 722 586 C729 592 731 601 726 608 C721 616 709 621 694 622 L617 622 C599 622 586 617 580 608 C575 601 579 589 592 583 Z" fill="#eff8fa"/>
+      </g>
+      <path d="M1088 835 C1154 816 1231 811 1326 825" fill="none" stroke="#e9ffff" stroke-opacity="0.22" stroke-width="2"/>
+    </g>
+
+    <path d="M58 922 C203 894 334 884 524 888 C736 892 962 924 1156 955 C1311 980 1451 991 1600 994" fill="none" stroke="#b0c5cc" stroke-opacity="0.08" stroke-width="4"/>
+  </g>
+
+  <g id="lighting" opacity="0.95">
+    <ellipse cx="970" cy="646" rx="218" ry="18" fill="#ffce73" opacity="0.09" filter="url(#softBlur)"/>
+    <ellipse cx="651" cy="625" rx="70" ry="10" fill="#ffd893" opacity="0.08" filter="url(#softBlur)"/>
+    <ellipse cx="979" cy="698" rx="200" ry="20" fill="#82b6c9" opacity="0.05" filter="url(#softBlur)"/>
+  </g>
+
+  <g id="atmosphere-front" opacity="0.7" filter="url(#mistFilter)">
+    <path d="M0 596 C181 587 367 588 563 606 C756 624 933 632 1121 624 C1323 615 1453 590 1600 582 L1600 694 C1430 695 1306 700 1132 706 C905 715 704 716 489 704 C319 694 161 690 0 696 Z" fill="url(#mistFade)"/>
+  </g>
+</svg>
